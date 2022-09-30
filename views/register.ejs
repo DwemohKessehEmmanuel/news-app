@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/assets/register.css">
+</head>
+<body>
+    <ul>
+        <% if(typeof errors != 'undefined'){ %>
+            <% errors.forEach(error=>{%>
+                <li><%= error.message %></li>
+           <% }) %>
+       <% } %>
+    </ul>
+
+    
+    
+    <form action="/users/register" method="post">
+        <div>
+            <h1 class="register-heading"> Register With Us Here!</h1>
+        </div>
+       <div>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+       </div>
+       <div>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+       </div>
+       <div>
+        <input type="password" name="password" id="password" placeholder="Enter password" required>
+       </div>
+       <div>
+        <input type="password" name="password1" id="password1" placeholder="Confirm password" required>
+       </div>
+       <div>
+        <input type="submit" value="REGISTER">
+       </div>
+       <div class="register-link">
+        <a href="/users/login">Already Registerd? Login</a>
+       </div>
+    </form>
+</body>
+</html>

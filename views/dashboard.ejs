@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../public/assets/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+</head>
+<body>
+    <a href="/users/logout" class="btn" id=""><span>Logout</span></a>
+    
+    <h1> Hello <%= user.charAt(0).toUpperCase() + user.slice(1) %></h1>
+
+    <form action="" class="search">
+        <label for=""></label>
+        <input type="text" class="input" placeholder="What are you looking for?">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="container">
+        <ul class="news-list"></ul>
+    </div>
+    <script src="../public/assets/newsApp.js"></script>
+</body>
+</html>

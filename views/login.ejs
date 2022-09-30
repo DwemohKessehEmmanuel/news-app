@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="../public/assets/login.css">
+</head>
+<body>
+    <h1 class="login-heading">Login Right Here</h1>
+
+    <ul>
+        <% if(messages.success_msg){ %>
+            <li><%= messages.success_msg %></li>
+       <% } %>
+    </ul>
+
+    <ul>
+        <% if(messages.error){ %>
+            <li><%= messages.error %></li>
+        <%}%>
+    </ul>
+    <form action="/users/login" method="post">
+        <div>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+           </div>
+           <div>
+            <input type="password" name="password" id="password" placeholder="Enter password" required>
+           </div>
+           <div>
+            <input type="submit" value="Login" style="color:black">
+           </div>
+           <div>
+            <a href="/users/register" class="register-link"><strong>Register</strong></a>
+           </div>
+    </form>
+
+    <p class="news-desc">Get all your <br>News at one place</p>
+</body>
+</html>

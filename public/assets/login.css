@@ -1,0 +1,47 @@
+body{
+    margin:0;
+    font-family: cursive;
+    background: url("https://images.unsplash.com/photo-1546422904-90eab23c3d7e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+ form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top: 20vh;
+    z-index: 1;
+    
+} 
+
+input{
+    padding: 10px;
+    margin: 5px;
+    /* border: 3px solid rgba(177, 192, 38, 0.904);
+    border-radius: 5px; */
+
+}
+
+.login-heading{
+    color:rgba(209, 69, 14, 0.904);
+    position: relative;
+    left:42vw;
+    top:5vh;
+}
+
+.register-link{
+    color:rgba(255, 17, 0, 0.897)
+}
+
+.news-desc{
+    font-weight:bolder;
+    font-size: xx-large;
+    
+    position: relative;
+    left: 50px
+} 

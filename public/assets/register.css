@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    font-family: cursive;
+    background: url("https://images.unsplash.com/photo-1478940020726-e9e191651f1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border: none;
+    position: relative;
+    left: 10vw;
+    z-index: 1;
+    
+    
+}
+
+input{
+    padding: 10px;
+    margin:10px;
+    border-radius: 5px;
+    border: 1px solid salmon;
+
+}
+
+.register-link a{
+   color: brown;
+}
+
+.register-heading{
+    color: salmon;
+}
